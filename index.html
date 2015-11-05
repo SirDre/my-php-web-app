@@ -1,16 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="my php app">
-    <meta name="author" content="sirdre">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>MY PHP APP</title>
+    <title>Origami - WebDesignCrowd</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     
     <!-- Montserrat: http://www.google.com/fonts/#QuickUsePlace:quickUse/Family:Montserrat -->
     <!-- <link href='http://fonts.googleapis.com/css?family=Montserrat:700,100' rel='stylesheet' type='text/css'> -->
@@ -18,7 +19,7 @@
     <!-- Stylesheet -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
-      <script src="assets/js/respond.min.js"></script>
+      <script src="js/respond.min.js"></script>
     <![endif]-->
 
   </head>
@@ -31,37 +32,464 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.php"><i class="icon-book"></i>MY PHP APP</a>
+        <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo">ORIGAMI</a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
+          <!-- This hidden one just makes scrollspy reset when going above the team section -->
           <li style="display: none;"><a href="#home"></a></li>
-          <li><a class="scroll" href="./index.php#customers" data-target="#customers" ><i class="icon-user"></i>Customers<span class="arrow-left"></span></a></li>
-          <li><a class="scroll" href="./index.php#employees" data-target="#employees"><i class="icon-user"></i>Employees<span class="arrow-left"></span></a></li>
-          <li><a class="scroll" href="./index.php#offices" data-target="#offices"><i class="icon-building"></i>Offices<span class="arrow-left"></span></a></li>
-          <li><a class="scroll" href="./index.php#orderdetails" data-target="#orderdetails"><i class="icon-list-ul"></i>Orderdetails<span class="arrow-left"></span></a></li>
-		  <li><a class="scroll" href="./index.php#orders" data-target="#orders"><i class="icon-shopping-cart"></i>Orders<span class="arrow-left"></span></a></li>
-		  <li><a class="scroll" href="./index.php#payments" data-target="#payments"><i class="icon-dollar"></i>Payments<span class="arrow-left"></span></a></li>
-		  <li><a class="scroll" href="./index.php#productlines" data-target="#productlines"><i class="icon-ambulance"></i>Productlines<span class="arrow-left"></span></a></li>
-		  <li><a class="scroll" href="./index.php#products" data-target="#products"><i class="icon-briefcase"></i>Products<span class="arrow-left"></span></a></li>
-		  <li>&nbsp;</li>
-		  <li>&nbsp;</li>
-		  <li>&nbsp;</li>
-         
+          <li><a class="scroll" href="#team"><i class="icon-user"></i>TEAM<span class="arrow-left"></span></a></li>
+          <li><a class="scroll" href="#services"><i class="icon-gear"></i>SERVICES<span class="arrow-left"></span></a></li>
+          <li><a class="scroll" href="#work"><i class="icon-briefcase"></i>WORK<span class="arrow-left"></span></a></li>
+          <li><a class="scroll" href="#pricing"><i class="icon-dollar"></i>PRICING<span class="arrow-left"></span></a></li>
+          <li><a class="scroll" href="#contact"><i class="icon-comments"></i>CONTACT<span class="arrow-left"></span></a></li>
+          <li><a href="features.html"><i class="icon-plus"></i>FEATURES<span class="arrow-left"></span></a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
+    <div class="search">
+      <i class="icon-search"></i>
+      
+      <form id="search" class="form-inline" role="form">
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleSearch">
+        </div>
+      </form>
+    </div>
+    
+    
+    <!-- Home Section -->
+    <div id="home" class="section">
+      <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
 
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <a href="#" class="image-wrapper">
+                <img src="assets/img/sintel-bedroom.png" alt="placeholder">                                  
+                <span class="overlay"><span class="valign"></span><i class="icon-link"></i></span>                    
+              </a>
+              <div class="carousel-caption">
+                <h2>Sintel Bedroom</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="#" class="image-wrapper">
+                <img src="assets/img/sintel-snowscape.jpg" class="img-responsive" alt="placeholder">                                  
+                <span class="overlay"><span class="valign"></span><i class="icon-link"></i></span>                    
+              </a>
+              <div class="carousel-caption">
+                <h2>Sintel Snowscape</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="#" class="image-wrapper">
+                <img src="assets/img/sintel-town-concept.jpg" alt="placeholder">                                  
+                <span class="overlay"><span class="valign"></span><i class="icon-link"></i></span>                    
+              </a>
+              <div class="carousel-caption">
+                <h2>Sintel Town</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div>
+            </div>
+          </div>
 
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><i class="icon-angle-left"></i></a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><i class="icon-angle-right"></i></a>
+        </div>
+        
+      </div>
+    </div><!-- /.container -->
+    
+    <!-- Team Section -->
+    <div id="team" class="section">
+      <div class="fixed-wrapper"><h1>Team</h1></div>
+      <div class="container">
+        
+        <div class="content">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="team-portrait block">              
+                <div class="title">
+                  <h2>Michael Chang</h2>
+                  <h3 class="italic">Developer</h3>
+                </div>
+                <div class="portrait">
+                  <a href="#">
+                    <img src="assets/img/portrait2.jpg" alt="Team Portrait">              
+                    <span class="overlay"><span class="valign"></span><i class="icon-envelope"></i></span>                    
+                  </a>
+        		    </div>
+                <p>Hi, I'm Michael Chang. I am a developer who specializes on CSS, HTML and Javascript. I'm excited to work more and learn more about design.</p>
+                <div class="social-media">
+                  <a href="#" data-toggle="tooltip" title="twitter"><i class="icon-twitter"></i></a>
+                  <a href="#" data-toggle="tooltip" title="facebook"><i class="icon-facebook"></i></a>
+                  <a href="#" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin"></i></a>
+                  <a href="#" data-toggle="tooltip" title="github"><i class="icon-github"></i></a>
+                  <a href="#" data-toggle="tooltip" title="pinterest"><i class="icon-pinterest"></i></a>
+               	  <span class="stretch"></span>
+        			 </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="team-portrait block">
+                <div class="title">
+                  <h2>Jane Doe</h2>
+                  <h3 class="italic">Founder</h3>
+                </div>
+                <div class="portrait">
+                  <a href="#">
+                    <img src="assets/img/portrait1.jpg" alt="Team Portrait">              
+                    <span class="overlay"><span class="valign"></span><i class="icon-envelope"></i></span>                    
+                  </a>
+                </div>
+                <p>I am Jane Doe, a web designer who loves designing and building websites. I founded this company to help bring web design to those who need it.</p>
+                <div class="social-media">
+                  <a href="#" data-toggle="tooltip" title="twitter"><i class="icon-twitter"></i></a>
+                  <a href="#" data-toggle="tooltip" title="facebook"><i class="icon-facebook"></i></a>
+                  <a href="#" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin"></i></a>
+                  <a href="#" data-toggle="tooltip" title="github"><i class="icon-github"></i></a>
+                  <a href="#" data-toggle="tooltip" title="pinterest"><i class="icon-pinterest"></i></a>
+                  <span class="stretch"></span>
+               	</div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="team-portrait block">
+                <div class="title">
+                  <h2>Jessica Smith</h2>
+                  <h3 class="italic">Graphic Designer</h3>                  
+                </div>
+                <div class="portrait">
+                  <a href="#">
+                    <img src="assets/img/portrait3.jpg" alt="Team Portrait">              
+                    <span class="overlay"><span class="valign"></span><i class="icon-envelope"></i></span>                    
+                  </a>
+                </div>
+                <p>My name is Jessica Smith. I work mainly as a graphic designer, designing beautiful web elements, buttons, backgrounds, and really anything that is needed.</p>
+                <div class="social-media">
+                  <a href="#" data-toggle="tooltip" title="twitter"><i class="icon-twitter"></i></a>
+                  <a href="#" data-toggle="tooltip" title="facebook"><i class="icon-facebook"></i></a>
+                  <a href="#" data-toggle="tooltip" title="linkedin"><i class="icon-linkedin"></i></a>
+                  <a href="#" data-toggle="tooltip" title="github"><i class="icon-github"></i></a>
+                  <a href="#" data-toggle="tooltip" title="pinterest"><i class="icon-pinterest"></i></a>
+                  <span class="stretch"></span>
+               	</div>
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div><!-- /.container -->
+    
+    
+    <!-- Services Section -->
+    <div id="services" class="section">
+      <div class="fixed-wrapper"><h1>Services</h1></div>
+      <div class="container">
+        
+        <div class="content">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="service block">
+                <div class="icon-wrapper purple">
+                  <span class="valign"></span>
+                  <span class="circle"><i class="icon-resize-full"></i></span>
+                </div>
+                <h3>Responsive.</h3>
+                <p>Bolt is responsive meaning it looks great on all devices. </p>                
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="service block">
+                <div class="icon-wrapper purple">
+                  <span class="valign"></span>
+                  <span class="circle"><i class="icon-rocket"></i></span>
+                </div>
+                <h3>Lightweight.</h3>
+                <p>Bolt is speedy and quick to load so users don't get bored. </p>                
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="service block">
+                <div class="icon-wrapper purple">
+                  <span class="valign"></span>
+                  <span class="circle"><i class="icon-gear"></i></span>
+                </div>
+                <h3>Customizable.</h3>
+                <p>Bolt has well defined sections so you can mix and match. </p>                
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="service block">
+                <div class="icon-wrapper purple">
+                  <span class="valign"></span>
+                  <span class="circle"><i class="icon-search"></i></span>
+                </div>
+                <h3>Retina Ready.</h3>
+                <p>Bolt has beautiful crystal clear graphics on all devices. </p>                
+              </div>
+            </div>
+          </div>
+          
+        </div><!-- /.content -->
+      </div>
+    </div>
+    
+    <!-- Work -->
+      <!-- Modal For Gallery -->      
+      <div class="modals">
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog">
+          <div class="wrapper">
+            <img data-dismiss="modal" class="img-responsive" src="assets/img/sintel-bedroom.png" alt="">
+            <h2 class="modal-title"><a href="http://sintel.org">Sintel Bedroom</a></h2>
+          </div><!-- /.content -->      
+        </div><!-- /.modal -->
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog">
+          <div class="wrapper">
+            <img data-dismiss="modal" class="img-responsive" src="assets/img/sintel-snowscape.jpg" alt="">
+            <h2 class="modal-title"><a href="http://sintel.org">Sintel Snowscape</a></h2>
+          </div><!-- /.content -->      
+        </div><!-- /.modal -->
+        <div class="modal fade" id="modal3" tabindex="-1" role="dialog">
+          <div class="wrapper">
+            <img data-dismiss="modal" class="img-responsive" src="assets/img/sintel-wallpaper-ishtar.jpg" alt="">
+            <h2 class="modal-title"><a href="http://sintel.org">Sintel Wallpaper Ishtar</a></h2>
+          </div><!-- /.content -->      
+        </div><!-- /.modal -->
+        <div class="modal fade" id="modal4" tabindex="-1" role="dialog">
+          <div class="wrapper">
+            <img data-dismiss="modal" class="img-responsive" src="assets/img/streamline.jpg" alt="">
+            <h2 class="modal-title"><a href="https://creativemarket.com/webdesigncrowd/13946-Streamline-Responsive-Portfolio">Streamline Theme</a></h2>
+          </div><!-- /.content -->      
+        </div><!-- /.modal -->
+        <div class="modal fade" id="modal5" tabindex="-1" role="dialog">
+          <div class="wrapper">
+            <img data-dismiss="modal" class="img-responsive" src="assets/img/ishtar-alley.png" alt="">
+            <h2 class="modal-title"><a href="http://sintel.org">Ishtar Alley</a></h2>
+          </div><!-- /.content -->      
+        </div><!-- /.modal -->
+        <div class="modal fade" id="modal6" tabindex="-1" role="dialog">
+          <div class="wrapper">
+            <img data-dismiss="modal" class="img-responsive" src="assets/img/sintel-town-concept.jpg" alt="">
+            <h2 class="modal-title"><a href="http://sintel.org">Sintel Town Concept</a></h2>
+          </div><!-- /.content -->      
+        </div><!-- /.modal -->
+      </div>
+    <div id="work" class="section">
+      <div class="fixed-wrapper"><h1>Work</h1></div>
+      <div class="container">      
+        <div class="row masonry-grid">
+          <div class="col-md-4 col-sm-4 col-xs-12 item">
+            <div class="item-wrapper block">
+              <a data-toggle="modal" href="#modal1" class="image">
+                <img src="assets/img/sintel-bedroom.png" alt="sintel bedroom"> 
+                <span class="overlay"><span class="valign"></span><i class="icon-search"></i></span>              
+              </a>
+              <div class="description block">
+                <h2>Sintel Bedroom</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+              </div> 		                    
+            </div>
+  		    </div>
+  		    <div class="col-md-4 col-sm-4 col-xs-12 item">
+            <div class="item-wrapper block">
+              <a data-toggle="modal" href="#modal2" class="image">
+                <img src="assets/img/sintel-snowscape.jpg" alt="sintel snowscape"> 
+                <span class="overlay"><span class="valign"></span><i class="icon-search"></i></span>              
+              </a>
+              <div class="description">
+                <h2>Snowscape</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              </div> 	
+            </div>	      
+    		  </div>
+    		  <div class="col-md-4 col-sm-4 col-xs-12 item">
+            <div class="item-wrapper block">
+              <a data-toggle="modal" href="#modal3" class="image">
+                <img src="assets/img/sintel-wallpaper-ishtar.jpg" alt="sintel wallpaper ishtar"> 
+                <span class="overlay"><span class="valign"></span><i class="icon-search"></i></span>              
+              </a>
+              <div class="description">
+                <h2>Ishtar Wallpaper</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+              </div> 		 
+            </div>     
+    		  </div>      
+    		  <div class="col-md-4 col-sm-4 col-xs-12 item">
+            <div class="item-wrapper block">
+              <a data-toggle="modal" href="#modal4" class="image">
+                <img src="assets/img/streamline.jpg" alt="Streamline responsive one page portfolio"> 
+                <span class="overlay"><span class="valign"></span><i class="icon-search"></i></span>              
+              </a>
+              <div class="description">
+                <h2>Streamline</h2>
+                <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut.</p>
+              </div> 	
+            </div>	      
+    		  </div>  		    		  
+  		    <div class="col-md-4 col-sm-4 col-xs-12 item">
+  		      <div class="item-wrapper block">            
+              <a data-toggle="modal" href="#modal5" class="image">
+                <img src="assets/img/ishtar-alley.png" alt="ishtar alley"> 
+                <span class="overlay"><span class="valign"></span><i class="icon-search"></i></span>              
+              </a>
+              <div class="description">
+                <h2>Ishtar Alley</h2>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+              </div> 		  
+            </div>    
+  		    </div>
+    		  <div class="col-md-4 col-sm-4 col-xs-12 item">
+    		    <div class="item-wrapper block">            
+              <a data-toggle="modal" href="#modal6" class="image">
+                <img src="assets/img/sintel-town-concept.jpg" alt="sintel town concept"> 
+                <span class="overlay"><span class="valign"></span><i class="icon-search"></i></span>              
+              </a>
+              <div class="description">
+                <h2>Sintel Town Concept</h2>
+                <p>Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+              </div> 		  
+            </div>    
+    		  </div>
+        </div>  
+      </div>
+      
+    </div><!-- /.container -->    
+    
+    
+    <!-- Pricing Section -->
+    <div id="pricing" class="section white">
+      <div class="fixed-wrapper"><h1>Pricing Table</h1></div>
+      <div class="container">
+        
+        <div class="content">          
+          <div class="pricing">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="wrapper block">
+                  <h3 class="text-center"><i class="icon-circle-blank"></i>BASIC</h3>
+                  <table class="table">
+                    <thead>
+                      <tr><th><span class="price">9</span></th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>One Time Installation</td></tr>
+                      <tr><td>No reselling </td></tr>
+                      <tr><td>Free Email Support</td></tr>  
+                      <tr><td><a class="btn" href="#">PURCHASE NOW</a></td></tr>  
+                    </tbody>
+                  </table>
+                  <a href="#">
+                    <span class="overlay"><span class="valign"></span><i class="icon-dollar"></i></span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="wrapper block">
+                  <h3 class="text-center"><i class="icon-star"></i>PREMIUM</h3>
+                  <table class="table">
+                    <thead>
+                      <tr><th><span class="price">35</span></th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Multiple Installations</td></tr>
+                      <tr><td>No reselling </td></tr>
+                      <tr><td>Free Email Support</td></tr>  
+                      <tr><td><a class="btn" href="#">PURCHASE NOW</a></td></tr>  
+                    </tbody>
+                  </table>
+                  <a href="#">
+                    <span class="overlay"><span class="valign"></span><i class="icon-dollar"></i></span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="wrapper block">                
+                  <h3 class="text-center"><i class="icon-trophy"></i>PRO</h3>
+                  <table class="table">
+                    <thead>
+                      <tr><th><span class="price">99</span></th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Multiple Installations</td></tr>
+                      <tr><td>Allowed to use and resell</td></tr>  
+                      <tr><td>Free Email Support</td></tr>  
+                      <tr><td><a class="btn" href="#">PURCHASE NOW</a></td></tr>  
+                    </tbody>
+                  </table>
+                  <a href="#">
+                    <span class="overlay"><span class="valign"></span><i class="icon-dollar"></i></span>
+                  </a>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.container -->
+    
+    
+    
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+      <div class="fixed-wrapper"><h1>Contact Us</h1></div>
+      <div class="container">
+        
+        <div class="content">
+         
+          
+          <form role="form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="exampleInputName" placeholder="Full Name" required>
+              <label for="exampleInputName"><i class="icon-tag"></i></label>
+              <div class="clearfix"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+              <label for="exampleInputEmail1"><i class="icon-inbox"></i></label>
+              <div class="clearfix"></div>
+            </div>
+            <div class="form-group textarea">
+              <textarea rows="6" class="form-control" id="exampleInputMessage" placeholder="Write Message" required></textarea>
+              <label for="exampleInputMessage"><i class="icon-pencil"></i></label>
+              <div class="clearfix"></div>
+            </div>
+            
+            <button type="submit" class="btn btn-large">Send Message</button>
+          </form>
+          
+        </div>
+        <br />
+        
+      </div>
+    </div><!-- /.container -->    
+    
+
+    
     <div id="footer" class="section">
-      <p>Made by <a href="http://876synergy.com">SirDre</a></p>     
+      <p>Made by <a href="http://webdesigncrowd.com">WebDesignCrowd</a></p>     
     </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery-1.9.1.min.js"></script>
-     <script src="assets/js/masonry.pkgd.min.js"></script>
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+    <script src="assets/js/masonry.pkgd.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/init.js"></script>
